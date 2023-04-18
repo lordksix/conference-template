@@ -1,14 +1,15 @@
-function sliderDate() {
-  const slideCount = document.querySelectorAll('#slider-wrapper ul li').length;
-  const slideWapper = document.querySelector('#slider-wrapper');
+function sliderDate(wrapperIDquery, nextID, prevID, contentDiv) {
+  const slideWapper = document.querySelector(wrapperIDquery);
+  const next = document.getElementById(nextID);
+  const previous = document.getElementById(prevID);
+  const dateDiv = document.querySelectorAll(contentDiv);
+
+  const slider = slideWapper.querySelector('ul');
+  const sliderLi = slideWapper.querySelectorAll('li');
+  const slideCount = sliderLi.length;
+
   const slideWidth = slideWapper.offsetWidth;
   const totalWidth = `${slideCount * slideWidth}px`;
-  const slider = document.querySelector('#slider-wrapper ul');
-  const sliderLi = document.querySelectorAll('#slider-wrapper li');
-  const next = document.getElementById('next');
-  const previous = document.getElementById('prev');
-  const dateDiv = document.querySelectorAll('.content');
-
   const dateDivArr = Array.from(dateDiv);
   const dateDivArrH = dateDivArr.map((arr) => arr.offsetHeight);
   const dateDivArrHeight = Math.max(...dateDivArrH);

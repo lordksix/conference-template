@@ -41,7 +41,7 @@ function renderPage() {
   removeChilds(body, intro);
   intro.appendChild(RenderModule.renderDatesCtn());
   const docFrag = document.createDocumentFragment();
-  slider.sliderDate();
+  slider.sliderDate('#slider-wrapper', 'next', 'prev', '.content');
   if (mobile) docFrag.appendChild(RenderModule.renderSpeakerSec(mobile));
   else {
     docFrag.appendChild(RenderModule.renderSpeakerSec(mobile));
