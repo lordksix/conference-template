@@ -102,3 +102,13 @@ dist
 
 # TernJS port file
 .tern-port
+
+.hintrc
+.stylelintrc.json
+.eslintrc.json 
+package.json
+package-lock.json
+gulpfile.js
+css/
+hint-report/
+.vscode
