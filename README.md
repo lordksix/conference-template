@@ -30,7 +30,7 @@
 
 # 📖 [Portfolio] <a name="about-project"></a>
 
-**Conference Website App** is a project to market, sell tickets and more about a hypotetical series of summits between ROC and Peru. It could be addapt for other topics, [check out this loom recording](https://www.loom.com/share/ed2102afa06e4d3dacc523b9aa528d60).
+**Conference Website App** is a project to market, sell tickets and more about a hypotetical series of summits between ROC and Peru. It could be addapt for other topics, [check out this loom recording](https://www.loom.com/share/6e73749c02c44c569024e65d69e7b51f).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

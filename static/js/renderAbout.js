@@ -19,7 +19,7 @@ function renderPage() {
     docFrag.appendChild(RenderModule.renderSponsorSec(mobile));
     docFrag.appendChild(RenderModule.renderFoot(mobile));
   } else {
-    docFrag.appendChild(RenderModule.renderFoot(mobile, false));
+    docFrag.appendChild(RenderModule.renderFoot(mobile));
   }
   body.appendChild(docFrag);
   const footer = document.querySelector('footer');
