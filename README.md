@@ -154,7 +154,7 @@ If you like this project, I encourage you to clone, fork and contribute. Our com
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - Templete used in project provided by (Microverse).
-- Original design idea by Cindy Shin in Behance.
+- Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
