@@ -295,7 +295,7 @@ export default {
   renderSponsorSec,
   renderFoot,
   renderSec,
-  speakers, 
-  renderSpeaker, 
+  speakers,
+  renderSpeaker,
   renderDatesCtn,
 };
