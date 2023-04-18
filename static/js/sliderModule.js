@@ -51,5 +51,6 @@ function sliderDate() {
   });
 }
 
-window.addEventListener('load', sliderDate);
-window.addEventListener('resize', sliderDate);
+export default {
+  sliderDate,
+};

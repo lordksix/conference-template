@@ -66,6 +66,33 @@ const logoDescripArr = [
   'Ministry of Foreign Affairs (Torre Tagle) of the Republic of Peru',
 ];
 
+const dateSummit = [
+  {
+    name: '2023.06.23(FRI) - 25(SUN)',
+    descrip: '@NATIONAL TAIWAN UNIVERSITY, Taipei',
+  },
+  {
+    name: '2023.06.26(MON) - 28(WED)',
+    descrip: '@GREATER TAICHUNG INT\'L EXPO CENTER, Taichung',
+  },
+  {
+    name: '2023.06.29(THURS) - 07.01(SAT)',
+    descrip: '@KAOHSIUNG EXHIBITION CENTER, Kaohsiung',
+  },
+  {
+    name: '2023.07.14(FRI) - 16(SUN)',
+    descrip: '@CONVENTION CENTER, Lima',
+  },
+  {
+    name: '2023.07.17(MON) - 19(WED)',
+    descrip: '@CONVENTION CENTER LOS CONQUISTADORES, Trujillo',
+  },
+  {
+    name: '2023.07.20(THURS) - 22(SAT)',
+    descrip: '@CONVENTION CENTER CERRO JULI, Arequip',
+  },
+];
+
 function renderSpeaker(speaker, index) {
   const speakerTag = document.createElement('li');
   speakerTag.classList.add('speaker');
@@ -215,6 +242,60 @@ function renderFoot(mobile, index = true) {
   return footer;
 }
 
+function arrowTad(id, alt) {
+  const prevArrowTag = document.createElement('a');
+  prevArrowTag.href = '#';
+  prevArrowTag.id = id;
+  const prevArrowImg = document.createElement('img');
+  prevArrowImg.src = './images/arrow.svg';
+  prevArrowImg.classList.add('arrow');
+  prevArrowImg.alt = alt;
+  prevArrowTag.appendChild(prevArrowImg);
+  return prevArrowTag;
+}
+
+function renderDates(dateSch) {
+  const silderLi = document.createElement('li');
+  const silderDiv = document.createElement('div');
+  silderDiv.classList.add('content', 'date-schedule');
+  const silderHead = document.createElement('h3');
+  silderHead.textContent = dateSch.name;
+  silderDiv.appendChild(silderHead);
+  const silderDes = document.createElement('p');
+  silderDes.textContent = dateSch.descrip;
+  silderDiv.appendChild(silderDes);
+  silderLi.appendChild(silderDiv);
+  return silderLi;
+}
+
+function renderDataSchedule() {
+  const silderUl = document.createElement('ul');
+  const docFrag = document.createDocumentFragment();
+  dateSummit.forEach((dateSch) => docFrag.appendChild(renderDates(dateSch)));
+  silderUl.appendChild(docFrag);
+  return silderUl;
+}
+
+function renderDatesCtn() {
+  const datesCtn = document.createElement('div');
+  datesCtn.classList.add('date-schedule-container');
+  const docFrag = document.createDocumentFragment();
+  docFrag.appendChild(arrowTad('prev', 'Previous'));
+  const silderCtn = document.createElement('div');
+  silderCtn.id = 'slider-wrapper';
+  silderCtn.appendChild(renderDataSchedule());
+  docFrag.appendChild(silderCtn);
+  docFrag.appendChild(arrowTad('next', 'Next'));
+  datesCtn.appendChild(docFrag);
+  return datesCtn;
+}
+
 export default {
-  renderSpeakerSec, renderSponsorSec, renderFoot, renderSec, speakers, renderSpeaker,
+  renderSpeakerSec,
+  renderSponsorSec,
+  renderFoot,
+  renderSec,
+  speakers, 
+  renderSpeaker, 
+  renderDatesCtn,
 };

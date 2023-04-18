@@ -1,6 +1,8 @@
 import RenderModule from './renderModule.js';
+import slider from './sliderModule.js';
 
 let body = document.querySelector('body');
+let intro = document.querySelector('#intro');
 let mobile = window.innerWidth < 768;
 
 function renderReminder(moreBTn, mobile) {
@@ -21,7 +23,9 @@ function renderReminder(moreBTn, mobile) {
   body.appendChild(docFrag);
 }
 
-function removeChilds(body) {
+function removeChilds(body, intro) {
+  const removeDates = document.querySelector('.date-schedule-container') || '';
+  if (removeDates) intro.removeChild(removeDates);
   const removeSpeaker = document.querySelector('.speakers') || '';
   if (removeSpeaker) body.removeChild(removeSpeaker);
   const removeSponsor = document.querySelector('.sponsors') || '';
@@ -33,8 +37,11 @@ function removeChilds(body) {
 function renderPage() {
   body = document.querySelector('body');
   mobile = window.innerWidth < 768;
-  removeChilds(body);
+  intro = document.querySelector('#intro');
+  removeChilds(body, intro);
+  intro.appendChild(RenderModule.renderDatesCtn());
   const docFrag = document.createDocumentFragment();
+  slider.sliderDate();
   if (mobile) docFrag.appendChild(RenderModule.renderSpeakerSec(mobile));
   else {
     docFrag.appendChild(RenderModule.renderSpeakerSec(mobile));
