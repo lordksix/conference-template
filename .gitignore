@@ -109,6 +109,5 @@ dist
 package.json
 package-lock.json
 gulpfile.js
-css/
 hint-report/
 .vscode
