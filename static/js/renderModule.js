@@ -58,13 +58,13 @@ const sponsors = [
     name: 'New Life Company',
     src: './images/NewLogo3.svg',
   },
-]
+];
 
 const logoDescripArr = [
   '2023 Peru Taiwan International Summits',
   'Ministry of Foreign Affairs (MOFA) of the Republic of China (Taiwan)',
   'Ministry of Foreign Affairs (Torre Tagle) of the Republic of Peru',
-]
+];
 
 function renderSpeaker(speaker, index) {
   const speakerTag = document.createElement('li');
@@ -123,7 +123,7 @@ function renderSpeakers(mobile) {
   speakerCtn.classList.add('speakers-ctn');
   const speakerCtnFrag = document.createDocumentFragment();
   for (let index = 0; index < speakers.length; index += 1) {
-    if(index < 2 || !mobile) speakerCtnFrag.appendChild(renderSpeaker(speakers[index], index));
+    if (index < 2 || !mobile) speakerCtnFrag.appendChild(renderSpeaker(speakers[index], index));
   }
   speakerCtn.appendChild(speakerCtnFrag);
   return speakerCtn;
@@ -138,7 +138,7 @@ function renderSponsors() {
   return sponsorCtn;
 }
 
-function renderSec(heading, mobile){
+function renderSec(heading, mobile) {
   const docFrag = document.createDocumentFragment();
   const headTag = document.createElement('h2');
   headTag.classList.add('section-title');
@@ -148,17 +148,17 @@ function renderSec(heading, mobile){
   headUnder.src = './images/title_underline.svg';
   headUnder.alt = '';
   switch (heading) {
-  case 'Feature Speakers':
-    docFrag.appendChild(headUnder);
-    docFrag.appendChild(renderSpeakers(mobile));
-    if(mobile) docFrag.appendChild(buttonMore());
-    break;
-  case'Partners':
-    docFrag.appendChild(headUnder);
-    docFrag.appendChild(renderSponsors());
-    break;
-  default:
-    break;
+    case 'Feature Speakers':
+      docFrag.appendChild(headUnder);
+      docFrag.appendChild(renderSpeakers(mobile));
+      if (mobile) docFrag.appendChild(buttonMore());
+      break;
+    case 'Partners':
+      docFrag.appendChild(headUnder);
+      docFrag.appendChild(renderSponsors());
+      break;
+    default:
+      break;
   }
   return docFrag;
 }
@@ -189,14 +189,13 @@ function renderFoot(mobile, index = true) {
   const logoDiv = document.createElement('div');
   logoDiv.classList.add('logo');
   const logoA = document.createElement('a');
-  logoA.href ='#intro';
+  logoA.href = '#intro';
   const logoImg = document.createElement('img');
-  logoImg.alt ='Peru Taiwan Summits 2023';
+  logoImg.alt = 'Peru Taiwan Summits 2023';
   if (index || mobile) {
     logoImg.src = './images/Conference-logo.svg';
     footer.classList.add('modal-bg');
-  }
-  else {
+  } else {
     logoImg.src = './images/conference-logo-light.svg';
     footer.classList.add('modal-bg', 'dark');
   }
@@ -210,10 +209,12 @@ function renderFoot(mobile, index = true) {
     const logoP = document.createElement('p');
     logoP.textContent = descrip;
     logoDescrip.appendChild(logoP);
-  })
+  });
   docFrag.appendChild(logoDescrip);
   footer.appendChild(docFrag);
   return footer;
 }
 
-export default {renderSpeakerSec, renderSponsorSec, renderFoot, renderSec, speakers, renderSpeaker}
+export default {
+  renderSpeakerSec, renderSponsorSec, renderFoot, renderSec, speakers, renderSpeaker,
+};
