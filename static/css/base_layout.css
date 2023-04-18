@@ -363,10 +363,6 @@ header {
   padding-block: max(15.16px, 2.1vh);
 }
 
-.activities .activiy:hover {
-  border: 2px solid #fff;
-}
-
 .activities .activity-title {
   font-size: clamp(12px, (100vw - 375px) * 1000, 14.5px);
   line-height: 175%;
@@ -491,6 +487,10 @@ header {
   height: clamp(80px, (100vw - 375px) * 1000, 100px);
   max-width: 200px;
   filter: grayscale(0.5);
+}
+
+.activities .activiy:hover {
+  border: 2px solid #fff;
 }
 
 #prev img {
