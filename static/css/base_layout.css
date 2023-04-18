@@ -12,6 +12,22 @@
   --font-3: #344563;
   --font-sponsor: #8f8f91;
   --font-speaker-pos: #f78c89;
+  --font-contact-des: #ebebff;
+  --font-form-label: #7d7c84;
+  --bckgrd: #fff;
+  --bckgrd-0: #fff0;
+  --btn-color: #396df2;
+  --btn-active: #2230d2;
+  --border: #dfe1e6;
+  --body-bg: #eeecec;
+  --connect: #7f8cff;
+  --letter-bb: #fff;
+  --bg-contact: #5263ff;
+  --bg-menu: #000000e3;
+  --bg-modal: #c1c7d0be;
+  --font-error: #f00;
+  --form-valid: #0f0;
+  --font-heading1: #ff3c23;
 }
 
 * {
