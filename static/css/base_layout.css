@@ -583,7 +583,7 @@ footer {
 
   .intro {
     background-image: url('../../images/hero-bg-desktop.png');
-    background-size: contain;
+    background-size: cover;
     padding-block: 6vh 12vh;
   }
 
