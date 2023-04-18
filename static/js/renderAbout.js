@@ -22,6 +22,8 @@ function renderPage() {
     docFrag.appendChild(RenderModule.renderFoot(mobile, false));
   }
   body.appendChild(docFrag);
+  const footer = document.querySelector('footer');
+  footer.classList.add('white');
 }
 
 window.addEventListener('load', renderPage);

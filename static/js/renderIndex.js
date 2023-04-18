@@ -5,7 +5,7 @@ let body = document.querySelector('body');
 let intro = document.querySelector('#intro');
 let mobile = window.innerWidth < 768;
 
-function renderReminder(moreBTn, mobile) {
+function renderReminder(moreBTn) {
   const speaker = document.querySelector('.speakers');
   const speakerCtn = document.querySelector('.speakers .speakers-ctn');
   const index = parseInt(document.querySelector('.speakers .speakers-ctn li:last-child').dataset.speaker, 10);
@@ -18,8 +18,6 @@ function renderReminder(moreBTn, mobile) {
   speakerCtn.appendChild(speakerCtnFrag);
   speaker.removeChild(moreBTn);
   const docFrag = document.createDocumentFragment();
-  docFrag.appendChild(RenderModule.renderSponsorSec(mobile));
-  docFrag.appendChild(RenderModule.renderFoot(mobile));
   body.appendChild(docFrag);
 }
 
@@ -51,7 +49,7 @@ function renderPage() {
   body.appendChild(docFrag);
 
   const moreBTn = document.querySelector('.speakers .btn-more') || '';
-  if (moreBTn) moreBTn.addEventListener('click', () => renderReminder(moreBTn, mobile));
+  if (moreBTn) moreBTn.addEventListener('click', () => renderReminder(moreBTn));
 }
 
 window.addEventListener('load', renderPage);

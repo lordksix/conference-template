@@ -363,6 +363,10 @@ header {
   padding-block: max(15.16px, 2.1vh);
 }
 
+.activities .activiy:hover {
+  border: 2px solid #fff;
+}
+
 .activities .activity-title {
   font-size: clamp(12px, (100vw - 375px) * 1000, 14.5px);
   line-height: 175%;
@@ -529,6 +533,10 @@ footer {
   .nav-header {
     position: static;
     justify-content: space-between;
+    padding-inline: 0;
+    max-width: none;
+    width: 70%;
+    margin-inline: auto;
   }
 
   .nav-menu {
@@ -586,7 +594,8 @@ footer {
   }
 
   .section-light > div {
-    max-width: 760px;
+    max-width: none;
+    width: 70%;
     margin-inline: auto;
   }
 
