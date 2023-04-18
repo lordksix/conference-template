@@ -19,11 +19,9 @@ function renderPage() {
     docFrag.appendChild(RenderModule.renderSponsorSec(mobile));
     docFrag.appendChild(RenderModule.renderFoot(mobile));
   } else {
-    docFrag.appendChild(RenderModule.renderFoot(mobile));
+    docFrag.appendChild(RenderModule.renderFoot(mobile, false));
   }
   body.appendChild(docFrag);
-  const footer = document.querySelector('footer');
-  footer.classList.add('white');
 }
 
 window.addEventListener('load', renderPage);
