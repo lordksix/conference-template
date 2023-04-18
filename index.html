@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/base_layout.css">
+  <title>Peru Taiwan Summit 2023</title>
+</head>
+<body> 
+  <header id="header">
+    <div class="social-media">
+      <a href="https://www.facebook.com/"><img src="./images/fb-icon.svg" alt="Facebook Link"></a>
+      <a href="https://twitter.com/"><img src="./images/tw-icon.svg" alt="Twitter Link"></a>
+      <a href="#">English</a>
+      <a href="#">My Page</a>
+      <a href="#">Logout</a>
+    </div>
+    <nav class="nav-header .modal-bg">
+      <div class="logo modal-bg">
+        <a href="./index.html" class="logo"><img src="./images/Conference-logo.svg" alt="Peru Taiwan Summits 2023"></a>
+      </div>
+      <ul class="nav-menu">
+        <input type="checkbox" id="menu_toggle" />
+        <label for="menu_toggle" class="menu_hamburger"><img src="./images/Union.svg" alt="Menu"></label>
+        <div class="menu">
+          <li id="close_menu">X</li>
+          <li><a href="./about.html" class="active">About</a></li>
+          <li><a href="#">Schedule</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Sponsor</a></li>
+          <li><a href="#">News</a></li>
+          <li class="square"><a href="#" class="active">T-P Campaign</a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <section class="section-light modal-bg intro about" id="intro">
+    <div>
+      <h2 class="subtitle">"Hello, everyone!"</h2>
+      <h1 class="section-title">Peru-Taiwan Int'l <br> Relations Summits <br> 2023</h1>
+      <p class="description">Series of summits in various cities in Peru and Taiwan to share information about and
+        promote the relationship of the great nation of Peru and Taiwan
+      </p>
+      <div class="date-schedule-container">
+        <a href="#" id="prev"><img src="./images/arrow.svg" alt="Previous" class="arrow"></a>
+        <div id="slider-wrapper">
+          <ul>
+            <li>
+              <div class="content date-schedule" data-schedule="1">
+                <h3>2023.06.23(FRI) - 25(SUN)</h3>
+                <p>@NATIONAL TAIWAN UNIVERSITY, Taipei</p>
+              </div>
+            </li>
+            <li>
+              <div class="content date-schedule" data-schedule="2">
+                <h3>2023.06.26(MON) - 28(WED)</h3>
+                <p>@GREATER TAICHUNG INT'L EXPO CENTER, Taichung</p>
+              </div>
+            </li>
+            <li>
+              <div class="content date-schedule" data-schedule="3">
+                <h3>2023.06.29(THURS) - 07.01(SAT)</h3>
+                <p>@KAOHSIUNG EXHIBITION CENTER, Kaohsiung</p>
+              </div>
+            </li>
+            <li>
+              <div class="content date-schedule" data-schedule="4">
+                <h3>2023.07.14(FRI) - 16(SUN)</h3>
+                <p>@CONVENTION CENTER, Lima</p>
+              </div>
+            </li>
+            <li>
+              <div class="content date-schedule" data-schedule="5">
+                <h3>2023.07.17(MON) - 19(WED)</h3>
+                <p>@CONVENTION CENTER LOS CONQUISTADORES, Trujillo</p>
+              </div>
+            </li>
+            <li>
+              <div class="content date-schedule" data-schedule="6">
+                <h3>2023.07.20(THURS) - 22(SAT)</h3>
+                <p>@CONVENTION CENTER CERRO JULI, Arequipa</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <a href="#" id="next"><img src="./images/arrow.svg" alt="Next" class="arrow"></a>
+      </div>
+    </div>
+  </section>
+  <section class="section-dark modal-bg activities" id="activities">
+    <h2 class="section-title">Main Program</h2>
+    <img src="./images/title_underline.svg" alt="">
+    <ul class="activiy-ctn">
+      <li class="activiy">
+        <img src="./images/program_icon_01 1.svg" alt="Lecture Summit" class="work-image">
+        <h3 class="activity-title">Lecture</h3>
+        <p class="activity-descrip">Listen to the speakers from various countries about the messages of sharing and opening.</p>
+      </li>
+      <li class="activiy">
+        <img src="./images/program_icon_02 1.svg" alt="Exhibition Summit" class="work-image">
+        <h3 class="activity-title">Exhibition</h3>
+        <p class="activity-descrip">Appreciate various art work by local artits, organized by Ministry of Culture of Peru and Taiwan</p>
+      </li>
+      <li class="activiy">
+        <img src="./images/program_icon_03 1.svg" alt="Forum Summit" class="work-image">
+        <h3 class="activity-title">Forum</h3>
+        <p class="activity-descrip">Have the time to share your thoughts and opinions with experts for each topic.</p>
+      </li>
+      <li class="activiy">
+        <img src="./images/program_icon_04 1.svg" alt="Workshop Summit" class="work-image">
+        <h3 class="activity-title">Workshop</h3>
+        <p class="activity-descrip">Try learning to cook, paint, draw, dance according to local customs.</p>
+      </li>
+      <li class="activiy">
+        <img src="./images/program_icon_05 1.svg" alt="Biz Expo Summit" class="work-image">
+        <h3 class="activity-title">Biz Expo</h3>
+        <p class="activity-descrip">Expo from local businesses with uniques products</p>
+      </li>    
+    </ul>
+    <button class="Join-more">Join Peru Taiwan Summit 2023</button>
+  </section>
+</body>
+</html>
