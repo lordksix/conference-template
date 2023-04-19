@@ -30,8 +30,7 @@
 
 # 📖 [Portfolio] <a name="about-project"></a>
 
-**Conference Website App** is a project to market, sell tickets and more about a hypotetical series of summits between ROC and Peru. It could be addapt for other topics, [check out this loom recording](https://www.loom.com/share/8474211f3e22480b946f9ecd0f456ff4
-).
+**Conference Website App** is a project to market, sell tickets and more about a hypotetical series of summits between ROC and Peru. It could be addapt for other topics, [check out this loom recording](https://www.loom.com/share/6e73749c02c44c569024e65d69e7b51f).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -154,7 +153,7 @@ If you like this project, I encourage you to clone, fork and contribute. Our com
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - Templete used in project provided by (Microverse).
-- Original design idea by Cindy Shin in Behance.
+- Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

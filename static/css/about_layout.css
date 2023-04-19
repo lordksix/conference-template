@@ -1,0 +1,155 @@
+.dark {
+  background-color: #2e2e2e;
+  color: #fff;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.intro.about {
+  background-image: url('../../images/about-bg-moible.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-weight: 700;
+}
+
+.about .subtitle {
+  color: #ff4f38;
+  font-size: 28px;
+}
+
+.about > img {
+  display: none;
+}
+
+.about .description {
+  background-color: #fff;
+  color: black;
+  padding-inline: 2.5vw;
+  font-size: 14px;
+  line-height: 180%;
+  text-align: center;
+}
+
+.about .contact {
+  color: black;
+  padding-block: 24px;
+  padding-inline: 11.7vw;
+  font-size: 12px;
+  line-height: 200%;
+  text-align: center;
+}
+
+.about .contact span {
+  text-decoration: underline;
+}
+
+.about-logo {
+  display: flex;
+  padding-block: 33px;
+  flex-flow: column;
+  text-align: center;
+  align-items: center;
+  gap: 35px;
+  padding-inline: 10.5px;
+  border-bottom: 2px solid #fafafa;
+  font-weight: 700;
+}
+
+.about-logo .section-title {
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.about-logo .description {
+  font-size: 16px;
+  line-height: 140%;
+  max-width: 759px;
+  color: #838383;
+}
+
+.about-logo-img {
+  width: 75vw;
+}
+
+.past-meet {
+  display: flex;
+  flex-flow: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.temp {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro.about {
+    background-image: url('../../images/about-bg-desktop.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top 50% left 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-block: 115px;
+    gap: 34px;
+  }
+
+  .about .subtitle {
+    display: none;
+  }
+
+  .about > img {
+    display: block;
+  }
+
+  .about .description {
+    padding: 35px 65px;
+    font-size: 14px;
+    width: min(100vw, 923px);
+    max-width: 923px;
+  }
+
+  .about .contact {
+    color: #7a7a7a;
+    padding-block: 24px;
+    padding-inline: 11.7vw;
+    font-size: 16px;
+    line-height: 170%;
+  }
+
+  .about-logo {
+    padding-block: 65px;
+  }
+
+  .about-logo .section-title {
+    font-size: 30px;
+    line-height: 140%;
+  }
+
+  .about-logo-img {
+    max-width: 400px;
+  }
+
+  #sponsors {
+    display: none;
+  }
+
+  .past-meet {
+    flex-flow: row;
+    gap: 25px;
+    justify-content: center;
+  }
+
+  .past-meet .about-logo-img {
+    width: 30vw;
+    max-width: 430px;
+  }
+
+  .temp {
+    display: inline;
+  }
+}
