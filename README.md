@@ -28,7 +28,7 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [Portfolio] <a name="about-project"></a>
+# 📖 [Conference App] <a name="about-project"></a>
 
 **Conference Website App** is a project to market, sell tickets and more about a hypotetical series of summits between ROC and Peru. It could be addapt for other topics, [check out this loom recording](https://www.loom.com/share/6e73749c02c44c569024e65d69e7b51f).
 
@@ -144,7 +144,7 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ⭐️ Show your support <a name="support"></a>
+## ⭐️ Show your supf <a name="support"></a>
 
 If you like this project, I encourage you to clone, fork and contribute. Our community and knowledge grows with each engagement.
 
